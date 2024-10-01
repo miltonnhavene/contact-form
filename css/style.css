@@ -14,11 +14,12 @@
     min-height: 100vh;
     padding: 20px 100px;
     background-color: black;
+    margin: 0 auto;
 }
 
 .contact-container{
     padding: 20px;
-    width: 700px;
+    width: 90%;
     height: 65vh;
     text-align: center;
     border: 4px solid #2ecc71;
@@ -52,7 +53,7 @@ h2::after{
     outline: none;
     border: 2px solid rgba(0,0,0,0);
     border-radius: 10px;
-    border-bottom: 1px solid #27ae60;
+    border-bottom: 4px solid #27ae60;
     background-color: black;
     color: white;
     font-size: 1.1rem;
@@ -66,7 +67,7 @@ h2::after{
 
 .field:hover{
     color: white;
-    border: 2px solid #27ae60;
+    border: 4px solid #27ae60;
 }
 
 .field:focus{
@@ -98,19 +99,86 @@ h2::after{
     color: black;
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 768px){
     .contact-container{
-        margin: 25px;
-        flex-direction: column;
-        height: 75vh;
+        height: 100%;
+        padding: 20px;
+        width: 700px;
+        margin: 20px 40px;
     }
 
     .field{
+        width: auto;
         margin-top: 10px;
         padding: 10px;
+        font-weight: 600;
     }
 
     .btn{
         width: 50%;
+        font-weight: 600;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .contact-container{
+        height: 750px;
+        padding: 20px;
+        width: 1200px;
+        margin: 20px 20px;
+    }
+
+    .field{
+        width: 400px;
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    h2{
+        margin-top: 15px;
+        font-size: 2.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .btn{
+        width: 50%;
+        font-size: 1.5rem;
+        padding: 1rem 1rem;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .contact-container{
+        height: 650px;
+        padding: 20px;
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .field{
+        width: 500px;
+        margin-top: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 1rem 0.5rem;
+    }
+
+    h2{
+        margin-top: 0px;
+        font-size: 2.2rem;
+    }
+
+    .btn{
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+
+
+    
+    
+}
+
